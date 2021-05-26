@@ -6,28 +6,15 @@ namespace HelloAlbuquerque
     {
         static void Main(string[] args)
         {
-          
-            Console.WriteLine("Hello There Albuquerque!");
-            
 
-            string[] languages = new string[]{
-                "C#", "COBOL", "Java",
-                "C++", "Visual Basic", "Pascal",
-                "Fortran", "Lisp", "J#"};
+            Console.WriteLine("What's your name?");
+            string name = Console.ReadLine();
+            Console.WriteLine($"Hi, {name}");
 
-            foreach(string item in languages)
-            {
-                Console.WriteLine(item);  
-            }
-
-            Console.WriteLine();
-            Array.Sort(languages);
-
-            foreach (string item in languages)
-            {
-                Console.WriteLine(item);
-            }
-
+            Console.WriteLine("Press a key");
+            int c = Console.Read();
+            Console.WriteLine($"You entered a {c}");
+           
         }
     }
 }
